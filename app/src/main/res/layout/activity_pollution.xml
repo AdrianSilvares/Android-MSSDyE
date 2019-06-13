@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.PollutionActivity">
+
+    <TextView
+        android:id="@+id/pollution_tittle"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="8dp"
+        android:text="Pollution"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/backIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        android:onClick="pressBack"/>
+
+    <View
+        android:id="@+id/div_line"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:layout_alignBottom="@+id/pollution_tittle"
+        android:layout_marginBottom="-18dp"
+        android:background="@android:color/holo_green_light" />
+
+    <TextView
+        android:id="@+id/location_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/div_line"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="10dp"
+        android:text="Location"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_tittle"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/tvTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_tittle"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/tvCity"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/weatherIcon"
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        android:layout_below="@+id/location_tittle"
+        android:layout_alignEnd="@+id/tvTemperature"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="-35dp" />
+
+    <TextView
+        android:id="@+id/mainPollutant_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCity"
+        android:layout_marginTop="28dp"
+        android:paddingLeft="10dp"
+        android:text="Main Pollutant"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMainPollutant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainPollutant_tittle"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="10dp"
+        android:text="" />
+
+    <View
+        android:id="@+id/div_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:layout_alignBottom="@+id/pollution_tittle"
+        android:layout_marginBottom="-178dp"
+        android:background="@android:color/holo_green_light" />
+
+    <TextView
+        android:id="@+id/AQI_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/div_line2"
+        android:layout_marginTop="200dp"
+        android:paddingLeft="10dp"
+        android:textAlignment="center"
+        android:text="Air Quality Index"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iconAQI"
+        android:layout_width="135dp"
+        android:layout_height="142dp"
+        android:layout_below="@+id/tvAQI"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="136dp" />
+
+    <TextView
+        android:id="@+id/tvAQI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AQI_tittle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="3dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:textStyle="italic" />
+</RelativeLayout>
